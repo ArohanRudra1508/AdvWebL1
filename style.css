@@ -1,5 +1,48 @@
+:root{
+    --color-Mob:#a2a2a2d9;
+    --color-Tab:#edb337d9;
+    --color-Lap:#c2f195d9;
+    --color-Con:#3b90e4d9;
+}
+
 body{
     text-align: center;
     font-size: 50;
     font-family: Poppins;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+#size{
+    top: 60%;
+    left: 50%;
+    color: darkgrey;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 576px) {
+    .container{
+        background-color: var(--color-Mob);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        background-color: var(--color-Tab);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        background-color: var(--color-Lap);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        background-color: var(--color-Con);
+    }
 }
